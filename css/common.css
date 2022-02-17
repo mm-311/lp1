@@ -9,6 +9,10 @@ body {
   background-color: rgba(222, 184, 135, 0.25);
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #333;
@@ -181,12 +185,12 @@ li {
 
 .frame {
   display: inline-table;
-  width: 100%;
   height: 10%;
   background-color: rgba(220, 220, 220, 0.481);
   border-radius: 10px;
-  margin: 30px;
+  margin: 30px 0;
   padding: 40px;
+  padding-right: 0;
 }
 
 .txt_content {
@@ -212,6 +216,7 @@ li {
 
 .sub_title {
   position: relative;
+  display: inline-block;
   font-size: 18px;
   color: #333;
   padding: 10px 0;
@@ -220,17 +225,36 @@ li {
 .sub_title::after {
   content: "";
   position: absolute;
-  top: 50%;
+  display: inline-block;
+  top: 1px;
+  right: -1px;
   z-index: 1;
   background-color: #333;
-  width: 40%;
+  width: 2px;
+  height: 160px;
+  margin-top: -1px;
+}
+
+#detail {
+  display: block;
+}
+
+#detail .sub_title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 80px;
+  z-index: 1;
+  background-color: #333;
+  width: 100px;
   height: 2px;
   margin-top: -1px;
 }
 
 .sub_title span {
   position: relative;
-  padding-right: 10px;
+  margin: 5px;
 }
 
 .photo_content {
@@ -245,7 +269,6 @@ li {
 
 .price_content {
   display: inline-table;
-  width: 30%;
   padding: 10px;
 }
 
@@ -267,18 +290,14 @@ li {
   font-size: 45px;
 }
 
-#profile {
-  overflow: hidden;
-}
-
 .frame_profile {
   display: flex;
-  width: 100%;
   height: 100%;
   background-color: #eee;
   border-radius: 5px;
   margin: 20px;
   padding: 40px;
+  line-height: 1.3;
 }
 
 .profile_bg {
@@ -290,8 +309,12 @@ li {
   padding-right: 40px;
 }
 
+.txt p {
+  margin: 10px;
+}
+
 .txt ul {
-  padding: 10px;
+  margin: 10px;
 }
 
 .txt ul li {
@@ -314,6 +337,10 @@ li {
 
 .txt table td {
   padding-left: 10px;
+}
+
+#blog {
+  text-align: center;
 }
 
 .blog_block {
