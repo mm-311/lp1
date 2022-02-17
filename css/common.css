@@ -24,7 +24,6 @@ li {
 }
 
 .inner {
-  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -165,7 +164,7 @@ li {
 }
 
 .txt h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: #555;
   margin-bottom: 30px;
 }
@@ -268,23 +267,23 @@ li {
   font-size: 45px;
 }
 
+#profile {
+  overflow: hidden;
+}
+
 .frame_profile {
-  display: inline-table;
-  width: 35%;
+  display: flex;
+  width: 100%;
   height: 100%;
   background-color: #eee;
   border-radius: 5px;
-  margin: 30px;
+  margin: 20px;
   padding: 40px;
 }
 
 .profile_bg {
   background-color: #fff;
-  height: 460px;
-}
-
-.intro {
-  display: flex;
+  height: 200px;
 }
 
 .intro_img {
